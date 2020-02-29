@@ -1,0 +1,587 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* css end */
+
+.clearfix:after{
+    clear: both;
+    content:'';
+    display:table;
+}/*增加 :after 偽元素、content 及 display*/
+
+.wrap{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #EFE9E7;
+}
+
+@media(max-width:768px){
+    .wrap{
+        max-width: 768px;
+        margin: 0 auto  ;
+      }
+}
+@media(max-width:414px){
+    .wrap{
+        max-width: 414px;
+        margin: 0 auto;
+      }
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  background-color: black;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+.logo a{
+    display: block; 
+    width: 120px;
+    height: 40px;
+    background: url("../Hexrestaurant/img/logo_w@svg.svg") no-repeat;
+    overflow: hidden;
+    text-indent: 101%;
+    border-radius: 10%;
+    white-space: nowrap;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .logo{
+      top: 18px;
+      left: 20px;
+      background: url("../Hexrestaurant/img/logo_w@svg.svg")no-repeat;
+    }
+}
+@media (max-width: 414px){
+    .logo{
+      width: 120px;
+      height: 40px;
+      top: 0px;
+      left: 0px;
+      background: url("../Hexrestaurant/img/logo_w@svg.svg")no-repeat;
+    }
+}
+
+.showmenu{
+    display:none;
+}
+.menu{
+    float: right;
+}
+.menu li{
+    float:left;
+    width: 140px;
+    height: 60px;
+    padding: 3px;
+    margin: 5px;
+    border-bottom: 3px solid transparent;
+}
+.menu li a{
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.fa-hamburger{
+    color: #ffff;
+}
+.header ul li:hover{
+   background-color: rgb(80, 69, 65,0.5);
+   border-bottom: 3px solid orange;
+}
+@media (max-width: 414px){
+    .menu{
+    max-height: 0px;
+    overflow: hidden;
+    transition:all 1s;
+    margin-top: 1px;    
+    position: absolute;
+    z-index: 100;   
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: black;
+   
+    }
+    .menu li{
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 3px solid orange;
+    }
+    .menu li a{
+    transition: all 0.3s;
+    }
+    /* 增加touch等效果 */
+    .header ul li:hover{
+    background-color: rgb(80, 69, 65,0.5);
+    border-bottom: 3px solid orange;}
+    .showmenu{
+    display: block;
+    float: right;
+    width:50px;
+    height:50px;
+    background: url(https://i.imgur.com/M3JmQOP.png)top left / 100% 100% no-repeat ;
+    background-color: white;
+    margin: 0.5px;
+    }
+    /*jQ點擊後動態在 body 加上 class */
+    .menu-show .menu{
+    max-height: 300px;
+    }
+}
+@media (max-width: 768px){
+    .menu{
+    max-height: 0px;
+    overflow: hidden;
+    transition:all 1s;
+    margin-top: 1px;    
+    position: absolute;
+    z-index: 100;   
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: black;
+   
+    }
+    .menu li{
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 3px solid orange;
+    }
+    .menu li a{
+    transition: all 0.3s;
+    }
+    /* 增加touch等效果 */
+    .header ul li:hover{
+    background-color: rgb(80, 69, 65,0.5);
+    border-bottom: 3px solid orange;}
+    .showmenu{
+    display: block;
+    float: right;
+    width:50px;
+    height:50px;
+    background: url("../Hexrestaurant/img/iconfinder_menu-alt_134216.png")top left / 100% 100% no-repeat ;
+    background-color: white;
+    margin: 0.5px;
+    }
+    /*jQ點擊後動態在 body 加上 class */
+    .menu-show .menu{
+    max-height: 358px;
+    }
+}
+
+
+.banner{
+    display: block;
+    background: url("../Hexrestaurant/img/header_desktop.png")no-repeat;
+    width: 100%;
+    height: 380px;
+    margin: 0 auto;
+}
+.solgan{
+    position: relative;
+    text-align: center;
+    top: 110px;
+    left: 280px;
+    width: 400px;
+    height: 150px;
+    background:rgba(0,0,0,0.5);
+}
+
+.solgan h2{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+.solgan p{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+@media (max-width: 768px){
+    .banner{
+    display: block;
+    width: 100%;
+    height: 420px;
+    }
+    .solgan{
+       left: 24%;
+    }
+    
+}
+@media (max-width: 414px){
+    .banner{
+    display: block;
+    background: url("../Hexrestaurant/img/header_mobile.png")no-repeat;
+    width: 100%;
+    height: 400px;
+    }
+    .solgan{
+     left: 0%;
+     width: 80%;
+     height: auto;
+     margin: 0 auto;
+}}
+
+
+.content{
+    width: 100%;
+    height: auto;
+    background-color: burlywood;
+}
+
+.form-login{ 
+    position: relative;
+    width: 40%;
+    transform: translate(75%,0%);
+}
+
+
+.form-login h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+}
+.form-login p{
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.form{
+    border-top: 3px solid rgb(221, 150, 17);
+    box-shadow: 1px 1px 2px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.form label{
+    display: block;
+    text-align: center;
+    padding:5px;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form input{
+    display: block;
+    width:60%;
+    margin: 0 auto;
+    padding:5px;
+}
+
+.email,.password {
+    position:relative;
+    display:inline-block;
+  }
+.fa-envelope,.fa-lock{ 
+    position: absolute;
+    left: 20%;
+    top: calc(50% - 0.1em);
+  }
+input {
+    text-indent: 20px;
+  } 
+label a{
+    color: black;
+    text-decoration: none;
+}
+
+label[type="checkbox" ]{
+    float: left;
+    width: 60%;
+    line-height: 10px;
+    text-align: right   ;
+    margin: 0;
+    padding: 0;
+}
+input[type="checkbox"]{
+    float:  left;
+    text-align: left;
+    width: 40%;
+    margin: 0 ;
+    padding: 0;
+}
+button[type="submit"]{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    color: #ffff;
+    background-color: gray;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+@media (max-width: 768px){
+  
+    .form-login{ 
+    position: relative;
+    width: 60%;
+    transform: translate(35%,0%);
+    }
+    }
+@media (max-width: 414px){
+  
+.form-login{ 
+    position: relative;
+    width: 75%;
+    transform: translate(20%,0%);
+}
+}
+
+
+.footer{
+    max-width: 100%;
+    background-color: #EFE9E7; 
+}
+.footer h2{
+    font-size: 25px;
+    margin: 10px 10px 0  10px;
+    padding: 5px 10px 0 10px;}
+
+
+.about {   
+   float: left;
+    width: 30%;
+   }
+.about p{
+    font-size: 16px;
+    padding:0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+.contact{   
+    float: left;
+    width: 30%;
+    margin-left: 70px;
+}
+.contact ul {
+   text-align: left;
+   padding:15px 0 0 0 ;
+}
+.contact ul li{
+   list-style-type:disc;
+   padding: 5px 0;
+}
+.footerlogo{
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.footerlogo a{
+    display: block;
+    background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
+}
+.link{
+    width: 30%;
+    float: right;
+    margin-right: 10px;
+}
+.fb a{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px ;
+}
+
+.twitter a{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.ig a{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+@media (max-width: 414px){
+    .footer{
+        max-width: 100%;
+        text-align: center;
+    }
+    .about{   
+        float: none;
+        width: 100%;
+        text-align: center;
+       }
+    .about h2{
+        text-align: left;
+    }
+    .about p{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .contact{   
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact h2{
+       text-align: left;
+    }
+    .contact ul{
+       text-align: left;
+       padding: 10px;
+       margin: 10px;
+    }
+    .contact ul li{
+        margin: 5px;
+    }
+    .footerlogo {
+        text-align: center;
+        width: 100%;
+        height:44px;
+        padding: 0;
+        margin: 20px 0;
+        background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
+    }
+    .link{
+        width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+    .link a{
+        display: block;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        max-width: 100%;
+        text-align: center;
+    }
+    .about{   
+        float: none;
+        width: 100%;
+        text-align: center;
+       }
+    .about h2{
+        text-align: center;
+    }
+    .about p{   
+        text-align: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    .contact{   
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact h2{
+       text-align: center;
+    }
+    .contact ul{
+       text-align: center   ;
+       padding: 10px;
+       margin: 10px;
+      
+    }
+    .contact ul li{
+        text-align: center  ;   
+        margin: 5px; 
+        list-style-type:  none;
+    }
+    .footerlogo {
+        text-align: center;
+        width: 100%;
+        height:44px;
+        padding: 0;
+        margin: 20px 0;
+        background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
+    }
+    .link{
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-left: 0;
+        text-align: center;
+    }
+    .link a{
+        display: block;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+    }
+}
