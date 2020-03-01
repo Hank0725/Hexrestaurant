@@ -93,7 +93,7 @@ img{
     display: block; 
     width: 120px;
     height: 40px;
-    background: url("../img/logo_w@svg.svg") no-repeat;
+    background: url("../Hexrestaurant/img/logo_w@svg.svg") no-repeat;
     overflow: hidden;
     text-indent: 101%;
     border-radius: 10%;
@@ -104,7 +104,7 @@ img{
     .logo{
       top: 18px;
       left: 20px;
-      background: url("../img/logo_w@svg.svg")no-repeat;
+      background: url("../Hexrestaurant/img/logo_w@svg.svg")no-repeat;
     }
 }
 @media (max-width: 414px){
@@ -113,7 +113,7 @@ img{
       height: 40px;
       top: 0px;
       left: 0px;
-      background: url("../img/logo_w@svg.svg")no-repeat;
+      background: url("../Hexrestaurant/img/logo_w@svg.svg")no-repeat;
     }
 }
 
@@ -180,7 +180,7 @@ img{
     float: right;
     width:50px;
     height:50px;
-    background: url("../img/iconfinder_menu-alt_134216.png")top left / 100% 100% no-repeat ;
+    background: url("../Hexrestaurant/img/iconfinder_menu-alt_134216.png")top left / 100% 100% no-repeat ;
     background-color: white;
     margin: 0.5px;
     }
@@ -222,7 +222,7 @@ img{
     float: right;
     width:50px;
     height:50px;
-    background: url("../img/iconfinder_menu-alt_134216.png")top left / 100% 100% no-repeat ;
+    background: url("../Hexrestaurant/img/iconfinder_menu-alt_134216.png")top left / 100% 100% no-repeat ;
     background-color: white;
     margin: 0.5px;
     }
@@ -235,7 +235,7 @@ img{
 
 .banner{
     display: block;
-    background: url("../img/header_desktop.png")no-repeat;
+    background: url("../Hexrestaurant/img/header_desktop.png")no-repeat;
     width: 100%;
     height: 380px;
     margin: 0 auto;
@@ -275,7 +275,7 @@ img{
 @media (max-width: 414px){
     .banner{
     display: block;
-    background: url("../img/header_mobile.png")no-repeat;
+    background: url("../Hexrestaurant/img/header_mobile.png")no-repeat;
     width: 100%;
     height: 400px;
     }
@@ -379,7 +379,7 @@ img{
     float: left;
     text-align: center;
     width: 20px;
-    height: 20px;
+    height: 16px;
     color: #fff;
     margin:10px 5px 5px 0;
     padding: 5px;
@@ -393,32 +393,31 @@ img{
 
 @media (max-width: 768px){
     .searchbar{
-        width: 80%;
-        height: 19px;
+        width: 70%;
+        height: 19px;   
         float: left;
     }
     .searchbar-btn{
         float: left;
         font-size: 33px;
-        width: 35px;
-        height: 38px;
-        margin:10px 5px 5px 0;
-        padding: 3.5px;
+        width: 18%;
+        height: 30px;
+        margin: 10px auto;
+        padding: 8px;
    }}
 @media (max-width: 414px){
     .searchbar{
-        float: left;
+        float: left;;
         width: 70%;
         height: 28px;
-       
+        margin: 0 auto;
     }
     .searchbar-btn{
         float: left;
-        width: 30px;    
-        height: 36px;
+        width: 16%;    
         font-size:30px;
-        margin: 10px 10px  10px 0 ;
-        padding:10px;
+        margin: 0 auto;
+        padding:8px;
    }}
 
 .checkout{
@@ -644,7 +643,7 @@ img{
 }
 .footerlogo a{
     display: block;
-    background-image: url("../img/logo_l@svg.svg")no-repeat;
+    background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
 }
 .link{
     width: 30%;
@@ -713,7 +712,7 @@ img{
         height:44px;
         padding: 0;
         margin: 20px 0;
-        background-image: url("../img/logo_l@svg.svg")no-repeat;
+        background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
     }
     .link{
         width: 100%;
@@ -774,7 +773,7 @@ img{
         height:44px;
         padding: 0;
         margin: 20px 0;
-        background-image: url("../img/logo_l@svg.svg")no-repeat;
+        background-image: url("../Hexrestaurant/img/logo_l@svg.svg")no-repeat;
     }
     .link{
         width: 100%;
