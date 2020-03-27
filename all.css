@@ -79,14 +79,12 @@ img{
 }
 
 .header{
-  position: relative;
-  width: 100%;
+  
   background-color: black;
 }
 .logo{
-    position: absolute;
-    top: 20px;
-    left: 30px;
+  float: left;
+  margin: 20px;
     
 }
 .logo a{
@@ -235,7 +233,7 @@ img{
 
 .banner{
     display: block;
-    background: url("../Hexrestaurant/img/header_desktop.png")no-repeat;
+    background: url("img/header_desktop.png")no-repeat;
     width: 100%;
     height: 380px;
     margin: 0 auto;
@@ -264,30 +262,35 @@ img{
     .banner{
     display: block;
     width: 100%;
-    height: 420px;
+    height: 400px;
     }
     .solgan{
-       left: 24%;
+     
+       text-align: center;
+       top: 100px;
+       left: 30px;
+       margin: 0 auto;
+       width: 60%;
     }
-    
 }
+
 @media (max-width: 414px){
     .banner{
     display: block;
     background: url("../Hexrestaurant/img/header_mobile.png")no-repeat;
-    width: 100%;
-    height: 400px;
+  
+    height: 300px;
     }
     .solgan{
-     left: 0%;
-     width: 80%;
-     height: auto;
-     margin: 0 auto;
+     top: 60px;
+     left: 0    ;
+     width: 70%;
+     height: 200px;
+     margin:  auto;
 }}
 
 
-.content{
-    width: 100%;
+.content-index{
     margin: 0 auto;
 }
 .content h2{
@@ -304,7 +307,7 @@ img{
 .content li{
     text-align: center;
     width: 33.33%;
-    margin: 1%;
+    line-height: 24px;
 }
 .content img{
     width: 150px;
@@ -318,7 +321,7 @@ img{
     padding: 10px;
     text-align: justify;
 }
-@media (max-width: 414px){
+@media (max-width: 767px){
     .content ul{
         display: block;
         float: none;
@@ -383,7 +386,7 @@ img{
     .chieftext p{
         text-align: left; 
         line-height: 20px;  
-        padding: 10 px;
+        padding: 10px;
     }
 }
 @media(max-width: 414px){
@@ -441,7 +444,7 @@ img{
     padding: 30px;
 }
 
-@media (max-width: 414px){ 
+@media (max-width: 767px){ 
     .impression ul{
         display: block;
       }  
@@ -450,8 +453,9 @@ img{
     }  
     .impression img{
         float: left;
-        width: 20%;
-        height: 70px;
+        width: 14%;
+        height: 60px;
+        border-radius: 56%;
     }
     .impression ul h2{
         float: left;
@@ -484,11 +488,18 @@ img{
         width: 30%;
         text-align: center;
         padding: 20px   ;
-}}
+}
+}
+@media (max-width: 414px){ 
+    .impression img{
+        float: left;
+        width: 20%;
+        height: 70px;
+    }
+}
 
 
 .address{
-    width: 100%;
     height: auto;
     background-color: white;
 }
@@ -504,12 +515,20 @@ img{
     margin: 1%;
 }
 
+@media (max-width: 767px){
+    .map{
+        background: url(https://i.imgur.com/S5CEaUc.png)no-repeat;
+        float: none;
+        width: 92%;
+        margin: 4%;
+    }
+}
 @media (max-width: 414px){
     .map{
         background: url(https://i.imgur.com/S5CEaUc.png)no-repeat;
         float: none;
-        width: 98%;
-        margin: 1%;
+        width: 96%;
+        margin: 2%;
     }
 }
 
@@ -534,12 +553,19 @@ img{
 .radio{
     float: left;
     width: 95%; 
-    margin: 5px;
+    margin: 5px;}
+.radio p{
+    float: left;
+}
+.radio label{
+    width: 10%;
+    padding: 5px;
 }
 .radio input{
-    width: 10%; 
-    padding: 0;
-    margin: 0;
+    float: left;
+    width: 10%;
+    line-height: 20px;
+    padding: 5px;
 }
 .sendbutton{
     float: right;
@@ -553,6 +579,7 @@ img{
     color: white;
     border-color: white ;
     border-radius: 10px;
+    cursor: pointer;
 }
 .sendbutton button:hover{
     background-color: rgba(39, 19, 19, 0.747);
@@ -563,29 +590,39 @@ img{
     border: 2px solid blue;
 }
 
-@media (max-width: 414px){
+@media (max-width: 767px){
     .text{
     float: none;
     width: 98%;
     }
     .text label{
         float: none;
-        margin: 5px 0;
+        margin: 0;
+        padding: 0;
     }
     .text input{
-        width: 90%;
-        margin: 10px;
+        width: 80%;
+        margin: 5%;
     }
     .radio{
         float: left;
-        width: 50%;
+        width: 90%;
         height: auto;
-        margin: 5px;
+        margin: 3%;
+    }
+
+    .radio p{
+        display: block;
+       
+    }
+    .radio label{
+        float: left;
+        text-align: center;
     }
     .radio input{
-        text-align: left;
-        width: 20%;
-        padding: 3px 5px;
+        width: 30px;
+        padding:0;
+        margin: 0;
     }
     .sendbutton{
         width: 100%;
@@ -609,15 +646,14 @@ img{
 
 
 
-
 .footer{
     max-width: 100%;
     background-color: #EFE9E7; 
 }
 .footer h2{
     font-size: 25px;
-    margin: 10px 10px 0  10px;
-    padding: 5px 10px 0 10px;}
+    margin: 0px 10px 0  10px;
+    padding: 10px 10px 0 10px;}
 
 
 .about {   
@@ -735,7 +771,7 @@ img{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .footer{
         max-width: 100%;
         text-align: center;
@@ -796,3 +832,450 @@ img{
         cursor: pointer;
     }
 }
+
+
+/* cart.css */
+.content-cart{
+    margin: 0 auto;
+}
+.sidebar{
+    width: 20%;
+    float: left;
+}
+.sidebar h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.sidebar ul{
+    width: 98%;
+    margin: 1%;
+}
+.sidebar li{
+
+    width: 90%;
+    text-align: left;
+   border-bottom: 1px solid #000;
+   
+    margin:0 10px;  
+}
+.sidebar li a{
+    display: block  ;  
+    color:#000;
+    text-decoration:none;   
+     padding: 16px;
+}
+.sidebar li a:hover{
+    background-color:#3d1101;
+    color: #fff;
+}
+
+@media (max-width: 767px){
+    .sidebar{
+        width: 98%;
+        margin:1% ;
+    }
+    .sidebar li{
+        width: 95%;
+        float: none;
+        text-align: center;
+    }
+   }
+   @media (max-width: 414px){
+    .sidebar{
+        width: 98%;
+        margin:1% auto;
+    }
+    .sidebar li{
+        width: 100%;
+        float: none;
+    }
+    .sidebar li a:hover{
+        background-color:#3d1101;
+        color: #fff;
+    }
+   }
+
+.cart{
+    width: 80%;
+    float: left;
+}
+
+@media (max-width: 916px){
+.cart{
+    width: 100%;
+    float: none;
+   }
+}
+@media (max-width: 414px){
+.cart{
+    width: 100%;
+    float: none;
+    }
+}
+    
+
+
+.searchbar{
+    float: left;
+    width: 45%;
+    padding: 10px;
+    margin: 10px 0  10px 10px ;
+    border: 3px solid #000;
+}
+.searchbar-btn{
+    float: left;
+    text-align: center;
+    width: 20px;
+    height: 16px;
+    color: #fff;
+    margin:10px 5px 5px 0;
+    padding: 12px;
+    background-color: #000;
+    border-radius: 0 10px 10px 0;
+}
+.searchbar-btn:hover{
+    color: #000;
+    background-color: gray;
+}
+.searchbar-btn:focus{
+  border: 1px solid white;
+}
+
+@media (max-width: 767px){
+    .searchbar{
+        width: 70%;
+        height: 19px;   
+        float: left;
+    }
+    .searchbar-btn{
+        float: left;
+        font-size: 33px;
+        width: 18%;
+        height: 32px;
+        margin: 10px auto;
+        padding: 6px;
+   }}
+@media (max-width: 414px){
+    .searchbar{
+        float: left;;
+        width: 70%;
+        height: 28px;
+        margin: 0 auto;
+    }
+    .searchbar-btn{
+        float: left;
+        width: 16%;    
+        font-size:34px;
+        margin: 0 auto;
+        padding:11px;
+   }}
+
+   
+.checkout{
+    float: right;   
+    margin-right: 30px;
+}
+.checkout a{ 
+    color:#000;
+    padding:5px;
+    font-size: 30px;
+    text-decoration: none; 
+}
+.checkout-btn{
+    padding: 10px;
+    margin: 0 5px;
+    color:#000;
+    border-left:2px solid #000;
+}
+
+   @media (max-width: 767px){
+    .checkout{
+        position: fixed;
+        top: 390px;
+        right: 0;
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        color: #3d1101;   
+        background-color: #fff ;  
+        border:2px solid #000;
+        border-radius: 10px;
+        z-index: 1000000;
+    }
+    .checkout-btn{
+        padding: 16px;
+        margin: 0 10px;
+        color:#000;
+        border-left:none;
+    }
+   }
+   @media (max-width: 414px){
+    .checkout{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        color:#3d1101 ;   
+        background-color:  #fff;  
+        border:2px solid #000;
+        border-radius: 10px;
+        z-index: 1000000;
+    }
+    .checkout-btn{
+        padding: 16px;
+        margin: 0 10px;
+        color:#000;
+        border-left:none;
+    }
+   }
+
+.product{
+    width:80%;
+    float: left;
+}
+.product li{
+    position: relative;
+    width: 30%;
+    float: left; 
+    margin:1%;
+    box-shadow: 1px 1px 2px #000;
+}
+
+@media (max-width: 916px){
+    .product{ 
+        width: 100%;
+        float:none;
+    }
+    .product ul{
+        width: 100%;
+    }
+    .product li{
+        position: none;
+        width: 46%;
+        margin: 2%;
+        text-align: center;
+    }
+    .product li img{
+        width: 100%;
+        height: 160px;
+    }
+   }
+   @media (max-width: 414px){
+    .product{ 
+        float:none;
+    }
+    .product ul{
+        width: 92%;
+        margin: 4%    ;
+    }
+    .product li{
+        width: 92%;
+        margin: 4%;
+        float: none;
+        text-align: center;
+    }   
+   }
+
+.fa-heart{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    background-color:transparent;
+  
+}
+.fa-heart a{
+    display: block  ;
+    padding: 0 ;
+    margin: 0;
+    text-decoration: none;
+}
+
+.line {
+    border: 0;
+    width: 70px;    
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+                                }
+                            
+.product img{
+    height: 100px;
+}
+.product a{
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.product h2{
+    font-size: 20px;
+    color: #3D1101 ;
+    text-align: center;
+    padding: 10px;
+}
+.product p{
+    font-size: 16px;
+    color: #3D1101;
+    text-align: center; 
+    padding: 5px;
+}
+.product h4{
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    color: orange;
+    line-height: 15px;
+    border: 2px solid orange;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.cart h4:hover{
+    color: tomato;
+    border:2px solid tomato;
+}
+
+@media (max-width: 768px){
+.product img{
+    width: 100%;
+} 
+.product h4{
+   display: block;
+}}
+@media (max-width: 414px){
+.product img{
+    width: 100%;
+    } }
+
+
+/* login.css */
+
+.content-login{
+    width: 100%;
+    height: auto;
+    background-color: burlywood;
+}
+
+.form-login{ 
+    position: relative;
+    width: 40%;
+    transform: translate(75%,0%);
+}
+
+
+.form-login h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px;
+}
+.form-login p{
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.form{
+    border-top: 3px solid rgb(221, 150, 17);
+    box-shadow: 1px 1px 2px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.form label{
+    display: block;
+    text-align: center;
+    padding:5px;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.form input{
+    display: block;
+    width:60%;
+    margin: 0 auto;
+    padding:5px;
+}
+
+.email,.password {
+    position:relative;
+    display:inline-block;
+  }
+.fa-envelope,.fa-lock{ 
+    position: absolute;
+    left: 20%;
+    top: calc(50% - 0.1em);
+  }
+input {
+    text-indent: 20px;
+  } 
+
+
+label a{
+    color: black;
+    text-decoration: none;
+}
+
+.label .email{
+    float: left;
+    width: 60%;
+    line-height: 10px;
+    text-align: right   ;
+    margin: 0;
+    padding: 0;
+}
+
+.label span{
+    float: left;
+    text-align: left;
+}
+
+#remember{
+display: inline-block;
+    text-align: left;
+    width: 20%;
+    margin: 0 ;
+    padding: 0;
+}
+button{
+    float: left;
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    color: #ffff;
+    background-color: gray;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+@media (max-width: 768px){
+  
+    .form-login{ 
+    position: relative;
+    width: 60%;
+    transform: translate(35%,0%);
+    }
+    }
+@media (max-width: 414px){
+  
+.form-login{ 
+    position: relative;
+    width: 75%;
+    transform: translate(20%,0%);
+}
+}
+
